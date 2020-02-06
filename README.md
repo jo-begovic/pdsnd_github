@@ -28,6 +28,7 @@ Based on user input, data is chosen in order to calculate statistics and build a
 
 ### Acknowledgments
 * https://guides.github.com/features/mastering-markdown/ - Markdown Guide
+* https://pybit.es/refactoring.html - Refactoring Python Code
 
 ### License
 * Udacity license
