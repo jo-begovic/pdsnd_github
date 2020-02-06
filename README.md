@@ -13,3 +13,21 @@ Based on user input, data is chosen in order to calculate statistics and build a
 
 ### Installation
 * Clone project locally or download the bikeshare.py file
+
+### Clone
+* Clone this repo to your local machine using https://github.com/jo-begovic/pdsnd_github.git
+
+### Files used
+* this README
+* bikeshare.py
+
+### Technologies used
+* Python
+* Git
+
+### Acknowledgments
+* https://guides.github.com/features/mastering-markdown/ - Markdown Guide
+
+### License
+* Udacity license
+* Copyright 2020 © Udacity
