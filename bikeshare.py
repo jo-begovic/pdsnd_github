@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york': 'new_york_city.csv',
@@ -28,6 +27,8 @@ def get_filters():
     # declare month and day variables with the value None
     month = None
     day = None
+    # Save error text in variable
+    error_msg = 'You made a typo! Please try again!'
 
     print('Hello! Let\'s explore some US bikeshare data!')
 
@@ -43,7 +44,7 @@ def get_filters():
         filter = input('Would you like to filter the data by month, day, both or not at all? Type \'none\' for no time filter.\n').lower()
         if filter in filters:
             break
-        print('You made a typo! Please try again!')
+        print(error_msg)
 
     # get user input for filters
     while filter != 'none':
@@ -53,19 +54,19 @@ def get_filters():
                 day = input('Which day would you like to filter the data?\n').lower()
                 if (month in months) and (day in days):
                     break
-                print('You made a typo! Please try again!')
+                print(error_msg)
         elif filter == 'month':
             while True:
                 month = input('Which month would you like to filter the data? January, February, March, April, May or June?\n').lower()
                 if month in months:
                     break
-                print('You made a typo! Please try again!')
+                print(error_msg)
         else:
             while True:
                 day = input('Which day would you like to filter the data?\n').lower()
                 if day in days:
                     break
-                print('You made a typo! Please try again!')
+                print(error_msg)
         break
 
     print('-' * 40)
@@ -224,7 +225,7 @@ def raw_data(df):
         while display.lower() == 'yes':
             print(df.head(x))
             x += 5
-            display = input('\nWould you like to see more raw data? Enter yes or no.\n')
+            display = input('\nAdditional five rows? Enter yes or no.\n')
         break
 
 
