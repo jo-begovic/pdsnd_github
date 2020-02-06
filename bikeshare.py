@@ -223,7 +223,7 @@ def raw_data(df):
         while display.lower() == 'yes':
             print(df.head(x))
             x += 5
-            display = input('\nWould you like to see more raw data? Enter yes or no.\n')
+            display = input('\nAdditional five rows? Enter yes or no.\n')
         break
 
 
