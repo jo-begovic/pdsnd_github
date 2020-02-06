@@ -20,6 +20,7 @@ Based on user input, data is chosen in order to calculate statistics and build a
 ### Files used
 * this README
 * bikeshare.py
+* All files with data (.csv)
 
 ### Technologies used
 * Python
